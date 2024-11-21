@@ -1,0 +1,382 @@
+
+*{
+    font-family:Helvetica;
+    padding: 0; 
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+  
+body > * {
+    flex-shrink: 0;
+}
+
+/* Header styling */
+header table{
+    width:100vw;
+    table-layout:fixed;
+}
+
+header h1{
+    font-size:x-large;
+}
+
+.grey-bg{
+     background-repeat:repeat;
+    background-size: 400px;
+}
+
+.black-bg{
+    background-color: black;
+}
+
+.centre{
+    text-align:center;
+}
+
+.right-align{
+    display: block;
+    margin-left: auto;
+}
+
+.padding{
+    padding:20px;
+}
+
+.margin-top-10{
+    margin-top:-10px;
+}
+
+.margin-top-20{
+    margin-top:-20px;
+}
+
+.bold{
+    font-weight:bold;
+}
+
+.small-text{
+    font-size:smaller;
+}
+
+.box{
+    width: 155px;
+    height: 100px;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.form-control:defined{
+    border-radius:10px;
+}
+
+.shadow{
+    box-shadow: 0px 0px 10px black;
+}
+
+table.table, thead{
+    border-top-style: solid;
+    border-color:black;
+    border-radius:5px;
+}
+
+
+
+/* Chart Section */
+#chartContainer {
+    
+    padding: 20px;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+canvas {
+    width: 100%;
+    height: 500px; /* Fixed height for the chart */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dropdown button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    canvas {
+        height: 400px;
+    }
+}
+
+.header-text{
+    color:white; 
+    background-color: black;
+    border: none;
+    border-radius:3px;
+    padding:10px;
+    padding-inline:20px;
+}
+
+.header-text:hover, .active{
+background-color: #207da4;
+}
+
+.dark-grey-bg{
+    background-color: rgb(86, 86, 86);
+}
+
+.dark-grey-bg:hover{
+    background-color: rgb(55, 55, 55);
+}
+/* End of header styling */
+
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+thead {
+    background-color: black;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+}
+
+.logo {
+    max-width: 100px;
+    background-color: transparent;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #333;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-nav .nav-item {
+    display: inline-block; 
+    margin: 0 70px; 
+}
+
+.services-description {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* ---------- login/register ----------- */
+.input-form-title{
+    font-size: 50px;
+    text-align: center; 
+    padding-top: 80px; 
+    color: white;
+}
+.input-form-box{
+    margin-left: 35%;
+    background-color: #333;
+    width: 500px;
+    height: 100%;
+    overflow: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.input-container {
+  position: relative;
+  margin: 20px;
+  padding-top: 40px;
+}
+
+::placeholder {
+    color: #ffffff;
+}
+
+.input-field {
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background-color: transparent;
+}
+
+.input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: rgba(204, 204, 204, 0);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  padding-top: 40px;
+}
+
+.input-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #207da4;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus + .input-label {
+  top: -20px;
+  font-size: 12px;
+  color: #207da4;
+}
+
+.input-field:focus + .input-label + .input-highlight {
+  width: 100%;
+}
+ 
+.submit-btn{
+    align-self: center;
+    background-color: #207da4;
+    margin-left: 205px;
+    margin-top: 40px;
+    width: 90px;
+    height: 40px;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.button{
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    padding: 20px 20px;
+    border-radius: 50px;
+    border-width: 2px;
+}
+
+.button:hover{
+    background-color: lightgrey;
+}
+
+.graphcontainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 75%;
+}
+
+.chart {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.bar {
+    background-color: #207da4;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* logout button */
+.Btn {
+    --black: #000000;
+    --ch-black: #141414;
+    --eer-black: #1b1b1b;
+    --night-rider: #2e2e2e;
+    --white: #ffffff;
+    --af-white: #f3f3f3;
+    --ch-white: #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: var(--night-rider);
+  }
+  
+  /* plus sign */
+  .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign svg {
+    width: 17px;
+  }
+  
+  .sign svg path {
+    fill: var(--af-white);
+  }
+  /* text */
+  .text {
+    position: absolute;
+    right: -5%;
+    width: 0%;
+    opacity: 0;
+    color: var(--af-white);
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
+  /* hover effect on button width */
+  .Btn:hover {
+    width: 125px;
+    border-radius: 5px;
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+  }
+  /* hover effect button's text */
+  .Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+  }
+  /* button click effect*/
+  .Btn:active {
+    transform: translate(2px ,2px);
+  }
+  #logout-footer{
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      margin: 10px;
+  }
